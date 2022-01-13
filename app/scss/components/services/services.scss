@@ -1,0 +1,26 @@
+.services {
+	&__pointer {
+		@include textProperties(14px, 1.21);
+		letter-spacing: 1px;
+		margin-bottom: 3px;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		color: $blue;
+	}
+
+	&__item-text {
+		color: $white;
+		@include textProperties(16px, 1.38);
+		padding: 10px 0 40px;
+	}
+
+	&__icon {
+		max-width: 64px;
+		margin-right: 10px;
+	}
+}

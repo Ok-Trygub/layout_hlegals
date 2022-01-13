@@ -1,0 +1,46 @@
+@include laptop {
+  .footer {
+    &__bground:hover {
+      background-color: #e5e5e5;
+    }
+
+    &__wrapper {
+      padding: 29px 0 81px;
+    }
+
+    &__contacts-wrapper {
+      padding: 31px 0 39px;
+    }
+
+    &__email {
+      padding: 0;
+    }
+
+    &__dot {
+      display: block;
+      padding: 0 10px 0;
+    }
+  }
+}
+
+@include desktop-small {
+  .footer {
+    &__wrapper {
+      padding: 29px 0 50px;
+    }
+
+    &__map-link {
+      padding: 0;
+    }
+
+    &__map-link:hover,
+    &__fblink:hover,
+    &__email:hover {
+      color: $pink;
+    }
+
+    &__contacts-wrapper {
+      padding: 31px 0 0;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.partners {
+  .container {
+    max-width: 1440px;
+  }
+
+  .row div {
+    display: inline-block;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &__title {
+    @include textProperties(14px, 1.21);
+    letter-spacing: 1px;
+    color: $darkBlue;
+    padding: 30px 0 30px;
+  }
+}

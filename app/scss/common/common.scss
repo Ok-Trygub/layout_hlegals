@@ -1,0 +1,87 @@
+body {
+	font-family: "TTNorms", sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1.44; //26px
+	background-color: $white;
+	color: #000000;
+}
+
+.container {
+	padding: 0 20px;
+}
+
+@include tablet {
+	.container {
+		padding: 0;
+	}
+}
+
+.row,
+.row > * {
+	--bs-gutter-x: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.title-h2 {
+	@include textProperties(32px, 1.18);
+}
+
+p {
+	margin: 0;
+}
+
+.fw-medium {
+	font-weight: 500;
+}
+
+.fw-bold {
+	font-weight: 700;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.gray {
+	color: $gray;
+}
+
+.white {
+	color: #ffffff;
+}
+
+
+h2 {
+	@include textProperties(38px, 1.18);
+	@extend %textRedGradient;
+	font-weight: 700;
+}
+
+@include desktop-xxLarge() {
+	h2 {
+		@include textProperties(42px, 1.19);
+	}
+}
+
+h3 {
+	@include textProperties(18px, 1.16); //21
+	font-weight: 500;
+}
+
+@include desktop-xxLarge() {
+	h3 {
+		font-size: 24px;
+	}
+}

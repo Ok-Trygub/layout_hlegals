@@ -1,0 +1,20 @@
+@include laptop {
+  .cases {
+    &__item {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__tapgerine-border {
+      border-radius: 0px 12px 0px 0px;
+    }
+
+    &__3dlook-border {
+      border-radius: 0px 0px 0px 12px;
+    }
+
+    &__clickky-border {
+      border-radius: 0px 0px 12px;
+    }
+  }
+}

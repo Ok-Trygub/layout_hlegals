@@ -1,0 +1,49 @@
+.footer {
+  &__bground {
+    background-color: $bgroundGray;
+  }
+  &__wrapper {
+    @include textProperties(16px, 1.18);
+    padding: 20px 0 118px;
+    border-top: 4px solid #e6e6f0;
+  }
+
+  &__address {
+    color: $darkBlue;
+  }
+
+  &__map-link-wrapper {
+    padding: 10px 0 20px;
+  }
+
+  &__map-link {
+    @include textProperties(12px, 1.16);
+    letter-spacing: 1px;
+    color: $blue;
+  }
+
+  &__fblink {
+    color: $blue;
+  }
+
+  &__phone-wrapper {
+    padding: 20px 0 20px;
+  }
+
+  &__phone,
+  &__phone:hover {
+    color: #46466e;
+  }
+
+  &__email-wrapper {
+    padding-bottom: 20px;
+  }
+
+  &__email {
+    color: $blue;
+  }
+
+  &__dot {
+    display: none;
+  }
+}

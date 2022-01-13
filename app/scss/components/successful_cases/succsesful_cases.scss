@@ -1,0 +1,30 @@
+.cases {
+  &__title-wrapper {
+    background-color: $bgroundGray;
+    border: 1px solid #ffffff;
+    border-radius: 12px 0px 0px 0px;
+    padding: 20px;
+  }
+
+  &__title {
+    color: $pink;
+    @include textProperties(14px, 1.21);
+    letter-spacing: 1px;
+  }
+
+  &__card {
+    background-color: $bgroundGray;
+    border: 1px solid #ffffff;
+    padding: 20px;
+  }
+
+  &__clickky-border {
+    border-radius: 0px 0px 12px 12px;
+  }
+
+  &__item {
+    line-height: 1.16;
+    color: $darkViolet;
+    margin-bottom: 10px;
+  }
+}
