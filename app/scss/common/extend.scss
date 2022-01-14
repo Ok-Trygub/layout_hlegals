@@ -1,42 +1,29 @@
-%darkBground {
-  background: linear-gradient(
-    19.01deg,
-    #7a425e 0%,
-    #323264 -33.67%,
-    #323264 85.39%,
-    #7a425e 96.53%
-  );
-  background-repeat: no-repeat;
-}
-
 %textRedGradient {
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 %textRedGradientReverse {
-  background: linear-gradient(90.13deg, #ef8080 -69.16%, #f0145a 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(90.13deg, #ef8080 -69.16%, #f0145a 99.96%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 %underlineDarkBground-1 {
-  background-color: #cacadb;
-  border-radius: 0px 0px 12px 12px;
-  padding: 0 20px 0;
+	background-color: #cacadb;
+	border-radius: 0px 0px 12px 12px;
 }
 
 %underlineDarkBground-2 {
-  background-color: #e7e7f2;
-  border-radius: 0px 0px 12px 12px;
-  padding: 0 40px 0;
+	background-color: #e7e7f2;
+	border-radius: 0px 0px 12px 12px;
 }
 
 %carouselIndicator {
-  background-color: $blue;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  border: none;
+	background-color: $blue;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	border: none;
 }

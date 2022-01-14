@@ -1,0 +1,33 @@
+.rules {
+	.carousel-indicators {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	.carousel-indicators [data-bs-target] {
+		margin: 20px 14px 45px 0;
+		@extend %carouselIndicator;
+	}
+
+	&__items-wrapper {
+		background-color: transparent;
+		margin-top: 40px;
+	}
+
+	&__slogan {
+		@include textProperties(14px, 1.21);
+		letter-spacing: 1px;
+		@extend %textRedGradientReverse;
+	}
+
+	&__title {
+		@include textProperties(22px, 1.18);
+		padding: 10px 0 15px;
+	}
+
+	.nav-tabs {
+		border-bottom: none;
+		border-right: 4px solid #e6e6f0;
+	}
+}

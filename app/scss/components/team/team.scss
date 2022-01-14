@@ -1,0 +1,49 @@
+.team {
+	.container {
+		padding-top: 20px;
+	}
+
+	.carousel-indicators {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	.carousel-indicators [data-bs-target] {
+		margin: 15px 14px 30px 0;
+		@extend %carouselIndicator;
+	}
+
+	&__items-wrapper {
+		background-color: $bgroundGray;
+		border-radius: 12px;
+		margin-top: 20px;
+		padding: 20px 3px 20px 20px;
+	}
+
+	h2 {
+		padding: 0 0 10px;
+	}
+
+	&__pointer {
+		@include textProperties(14px, 1.21);
+		color: $blue;
+	}
+
+	&__member {
+		margin-left: 10px;
+	}
+
+	&__name {
+		line-height: 1.16;
+		margin-bottom: 5px;
+	}
+
+	&__position {
+		@include textProperties(22px, 1.38);
+	}
+
+	&__member-img {
+		display: none;
+	}
+}

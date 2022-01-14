@@ -1,0 +1,27 @@
+@include desktop-small {
+	.header-services-bground {
+		background: linear-gradient(23.01deg,#7a425e 0,#323264 32.33%,#323264 84.39%,#7a425e 102.53%);
+		background-repeat: no-repeat;
+	}
+
+
+  .logo {
+    &__title {
+      max-width: 546px;
+      margin: 243px 0 0;
+    }
+
+    &__img {
+      height: 669px;
+      background-image: url(./../images/hlegals_symbol.svg),
+        url(./../images/logo_bground.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 185px left 50%, top 65px left 50%;
+    }
+
+    &__scroll-container {
+      bottom: 122px;
+      left: 0;
+    }
+  }
+}

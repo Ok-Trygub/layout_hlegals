@@ -1,0 +1,62 @@
+.header-services-bground {
+	background: linear-gradient(47.99deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
+	background-repeat: no-repeat;
+	border-radius: 0px 0px 12px 12px;
+	position: relative;
+}
+
+.header-services-bground::before {
+	content: "";
+	@extend %underlineDarkBground-1;
+	width: calc(100% - 40px);
+	height: 10px;
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+	right: 20px;
+}
+
+.header-services-bground::after {
+	content: "";
+	@extend %underlineDarkBground-2;
+	width: calc(100% - 80px);
+	height: 10px;
+	position: absolute;
+	bottom: -20px;
+	left: 40px;
+}
+
+.logo {
+	.container-fluid {
+		height: 100vh;
+	}
+
+	&__title {
+		@include textProperties(38px, 1.18);
+		max-width: 449px;
+		margin: 119px 0 263px;
+	}
+
+	&__img {
+		height: 555px;
+		background-image: url(./../images/hlegals_symbol.svg);
+		background-repeat: no-repeat;
+		background-position: top 83px left 50%;
+	}
+
+	&__scroll-container {
+		width: 100%;
+		height: 200px;
+		position: absolute;
+		padding-bottom: 20px;
+		bottom: 95px;
+		left: 0;
+		background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+	}
+
+	&__scroll {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+}
