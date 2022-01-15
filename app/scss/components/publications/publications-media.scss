@@ -48,6 +48,7 @@
 
     h2 {
       padding-bottom: 40px;
+			@include textProperties(42px, 1.19);
     }
 
     h3 {

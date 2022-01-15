@@ -1,0 +1,39 @@
+@include laptop {
+	.team {
+		h1 {
+			padding: 82px 0 80px;
+		}
+
+		&__img {
+			width: 100%;
+			padding: 0 0 20px 0;
+		}
+
+		&__items-wrapper {
+			padding-bottom: 60px;
+		}
+
+		&__item {
+			padding-bottom: 40px;
+		}
+
+		&__item-last {
+			padding-bottom: 0;
+		}
+
+		&__item-position {
+			padding-bottom: 0;
+		}
+
+
+
+
+
+
+
+
+
+
+
+	}
+}

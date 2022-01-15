@@ -23,6 +23,9 @@
 
 	h2 {
 		padding: 0 0 10px;
+		@include textProperties(38px, 1.18);
+		@extend %textRedGradient;
+		font-weight: 700;
 	}
 
 	&__pointer {

@@ -18,6 +18,9 @@
 
   h2 {
     padding-bottom: 20px;
+		@include textProperties(38px, 1.18);
+		@extend %textRedGradient;
+		font-weight: 700;
   }
 
   &__item {
@@ -49,6 +52,8 @@
   }
 
   h3 {
+		@include textProperties(18px, 1.16); 
+		font-weight: 500;
     color: $blue;
   }
 

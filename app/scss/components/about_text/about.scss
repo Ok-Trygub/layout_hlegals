@@ -1,0 +1,83 @@
+.about {
+	.container {
+		padding-top: 20px;
+		padding-bottom: 34px;
+	}
+
+	&__title-top {
+		padding-bottom: 20px;
+	}
+
+	&__statistic {
+		border-top: 4px solid #e6e6f0;
+		padding-top: 15px;
+		margin-top: 20px;
+	}
+
+	&__statistic-item {
+		padding-bottom: 20px;
+	}
+
+	&__statistic-item:last-child {
+		padding-bottom: 0;
+	}
+
+	&__statistic-text {
+		line-height: 1.16;
+		padding-top: 10px;
+	}
+
+	&__icons {
+		width: 23px;
+	}
+
+	&__numbers {
+		@include textProperties(36px, 1.16);
+		@extend %textRedGradient;
+		font-weight: 700;
+		padding-left: 10px;
+	}
+
+	&__title-bottom {
+		padding-top: 20px;
+	}
+
+	&__team-img {
+		width: 100%;
+	}
+}
+
+.achievements {
+	background-color: $bgroundGray;
+	border-radius: 12px 12px 0px 0px;
+
+	&__title {
+		@include textProperties(14px, 1.21);
+		letter-spacing: 1px;
+		color: #323264;
+		padding: 28px 0 30px;
+	}
+	.carousel-indicators {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	.carousel-indicators [data-bs-target] {
+		margin: 30px 14px 30px 0;
+		@extend %carouselIndicator;
+	}
+
+	&__slide {
+		margin-right: 20px;
+	}
+
+	&__img {
+		width: 157px;
+		margin-right: 20px;
+	}
+
+	&__img:last-child {
+		margin: 0;
+	}
+}

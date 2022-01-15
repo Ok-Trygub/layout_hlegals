@@ -1,0 +1,96 @@
+.header {
+	.container {
+		padding-top: 20px;
+	}
+
+	button[aria-expanded="true"] {
+		.navbar-toggler-icon {
+			width: 18px;
+			height: 18px;
+			border: none;
+			background: url("./../images/close_btn.svg") center/2em;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.navbar {
+		padding: 10px 0 0;
+	}
+
+	.navbar-light .navbar-toggler-icon {
+		background-image: url("./../images/burger_blue.svg");
+	}
+
+	.navbar-toggler {
+		border: none;
+	}
+
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+
+	.btn-group {
+		align-items: center;
+	}
+
+	.btn {
+		padding: 0;
+		@include textProperties(12px, 1.16);
+		letter-spacing: 1px;
+		margin-right: 10px;
+	}
+
+	.btn:last-child {
+		margin: 0;
+	}
+
+	.btn-outline-primary {
+		color: $gray;
+		border: none;
+	}
+
+	.btn-check:active + .btn-outline-primary,
+	.btn-check:checked + .btn-outline-primary,
+	.btn-outline-primary.active,
+	.btn-outline-primary.dropdown-toggle.show,
+	.btn-outline-primary:active {
+		color: #fff;
+		background: $pink;
+		border-radius: 8px;
+		padding: 5px;
+		margin-right: 6px;
+		box-shadow: none;
+	}
+
+	&__phone {
+		@include textProperties(16px, 1.18);
+	}
+
+	&__logo {
+		max-width: 77.5px;
+	}
+
+	&__logo-text {
+		@include textProperties(19px, 1.16);
+		color: #323264;
+	}
+
+	&__logo-slash {
+		width: 11px;
+	}
+
+	&__logo-symbol {
+		width: 21px;
+	}
+
+	&__nav-item {
+		@include textProperties(24px, 1.16);
+		color: $blue;
+		padding: 11px 0 15px;
+	}
+
+	&__nav-item:active,
+	&__nav-item:focus {
+		color: $pink;
+	}
+}

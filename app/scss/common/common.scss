@@ -62,26 +62,25 @@ a:hover {
 	color: #ffffff;
 }
 
-
-h2 {
+h1 {
 	@include textProperties(38px, 1.18);
 	@extend %textRedGradient;
 	font-weight: 700;
 }
 
 @include desktop-xxLarge() {
-	h2 {
+	h1 {
 		@include textProperties(42px, 1.19);
 	}
 }
 
-h3 {
+h2 {
 	@include textProperties(18px, 1.16); //21
 	font-weight: 500;
 }
 
 @include desktop-xxLarge() {
-	h3 {
+	h2 {
 		font-size: 24px;
 	}
 }

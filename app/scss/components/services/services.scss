@@ -6,11 +6,16 @@
 	}
 
 	h2 {
+		@include textProperties(38px, 1.18);
+		@extend %textRedGradient;
+		font-weight: 700;
 		margin-bottom: 20px;
 	}
 
 	h3 {
 		color: $blue;
+		@include textProperties(18px, 1.16); 
+		font-weight: 500;
 	}
 
 	&__item-text {

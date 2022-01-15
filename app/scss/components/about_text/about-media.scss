@@ -1,0 +1,51 @@
+@include laptop {
+	.achievements {
+		&__slide {
+			margin-right: 40px;
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+}
+
+@include desktop-small {
+	.about {
+		.container {
+			padding-top: 85px;
+			padding-bottom: 100px;
+		}
+
+		&__text-wrapper {
+			max-width: 641px;
+		}
+
+		&__text {
+			@include textProperties(21px, 1.42);
+		}
+
+		&__statistic {
+			border-top: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		&__statistic-item {
+			border-left: 4px solid #e6e6f0;
+			padding: 0 0 40px 20px;
+		}
+
+		&__title-bottom {
+			padding: 0 0 0 40px;
+		}
+	}
+}
+
+@include desktop-xLarge {
+	.achievements {
+		&__img {
+			margin-right: 40px;
+		}
+	}
+}

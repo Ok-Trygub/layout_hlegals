@@ -1,0 +1,97 @@
+@include laptop {
+	.header {
+		.navbar-expand-md {
+			flex-wrap: wrap;
+		}
+
+		.navbar-expand-md .navbar-collapse {
+			justify-content: flex-end;
+		}
+
+		.btn:hover {
+			background: #ededf7;
+			border-radius: 8px;
+			padding: 5px;
+		}
+
+		.btn-group > .btn-group:not(:last-child) > .btn,
+		.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+
+		.btn-group > .btn-group:not(:first-child) > .btn,
+		.btn-group > .btn:nth-child(n + 3),
+		.btn-group > :not(.btn-check) + .btn {
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+		}
+
+		.btn:last-child {
+			margin-right: 20px;
+		}
+
+		&__address {
+			@include textProperties(14px, 1.18);
+		}
+
+		&__dot {
+			margin: 0 10px 0;
+		}
+
+		&__fblink {
+			width: 24px;
+			height: 24px;
+		}
+
+		&__nav-item {
+			font-size: 16px;
+			margin-right: 15px;
+		}
+
+		&__nav-item:hover {
+			color: $pink;
+		}
+
+		&__nav-item:active {
+			border-bottom: 2px solid $pink;
+		}
+	}
+}
+
+@include desktop-small {
+	.header {
+		.container {
+			padding-top: 56px;
+		}
+
+		&__logo {
+			max-width: 155px;
+		}
+
+		&__logo-slash {
+			width: 21px;
+		}
+
+		&__logo-symbol {
+			width: 41px;
+		}
+
+		&__logo-text {
+			@include textProperties(32px, 1.18);
+		}
+
+		&__address {
+			@include textProperties(16px, 1.18);
+		}
+
+		&__nav-item {
+			@include textProperties(18px, 1.16);
+			margin-right: 15px;
+		}
+
+		.navbar {
+			padding: 20px 0 0;
+		}
+	}
+}
