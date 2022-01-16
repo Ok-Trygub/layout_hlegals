@@ -35,6 +35,8 @@
 		@include textProperties(38px, 1.18);
 		max-width: 449px;
 		margin: 119px 0 263px;
+		background: #ffffff; 
+		-webkit-background-clip: text;
 	}
 
 	&__img {

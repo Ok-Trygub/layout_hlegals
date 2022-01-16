@@ -1,20 +1,22 @@
-@include laptop {
+@include desktop-small {
 	.team {
 		h1 {
 			padding: 82px 0 80px;
 		}
 
 		&__img {
-			width: 100%;
+			max-width: 100%;
 			padding: 0 0 20px 0;
 		}
 
 		&__items-wrapper {
 			padding-bottom: 60px;
+			--bs-gap: 20px;
 		}
 
 		&__item {
 			padding-bottom: 40px;
+			margin-right: 20px;
 		}
 
 		&__item-last {
