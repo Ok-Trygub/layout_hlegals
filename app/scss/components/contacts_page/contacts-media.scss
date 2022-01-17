@@ -1,0 +1,23 @@
+@include desktop-small {
+
+
+
+
+
+
+
+  .map {
+    .container-fluid {
+      max-width: 1440px;
+    }
+
+    &__iframe {
+      display: block;
+    }
+  }
+
+
+
+
+  
+}
