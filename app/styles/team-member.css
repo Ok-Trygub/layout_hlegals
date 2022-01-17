@@ -19214,9 +19214,6 @@ h2, .h2 {
     width: 24px;
     height: 24px;
   }
-  .header__fblink:hover {
-    color: #24A3FF;
-  }
   .header__nav-item {
     font-size: 16px;
     margin-right: 15px;
