@@ -19256,6 +19256,9 @@ h2, .h2 {
     padding: 20px 0 0;
   }
 }
+.team .container {
+  padding-bottom: 34px;
+}
 .team h1, .team .h1 {
   padding: 30px 0 20px;
 }
@@ -19263,16 +19266,16 @@ h2, .h2 {
   max-width: 158px;
   padding-right: 20px;
 }
-.team__items-wrapper {
-  padding-bottom: 34px;
-}
 .team__item {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .team__item-name {
   color: #323264;
   line-height: 1.16;
   padding-bottom: 5px;
+}
+.team__item-name:hover {
+  color: #F0145A;
 }
 .team__item-position {
   font-size: 16px;
@@ -19281,23 +19284,21 @@ h2, .h2 {
 }
 
 @media (min-width: 992px) {
+  .team .container {
+    padding-bottom: 60px;
+  }
   .team h1, .team .h1 {
     padding: 82px 0 80px;
+  }
+  .team__items-wrapper {
+    padding-bottom: 40px;
   }
   .team__img {
     max-width: 100%;
     padding: 0 0 20px 0;
   }
-  .team__items-wrapper {
-    padding-bottom: 60px;
-    --bs-gap: 20px;
-  }
   .team__item {
-    padding-bottom: 40px;
-    margin-right: 20px;
-  }
-  .team__item-last {
-    padding-bottom: 0;
+    margin: 0 20px 0 0;
   }
   .team__item-position {
     padding-bottom: 0;

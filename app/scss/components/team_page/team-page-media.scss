@@ -1,7 +1,15 @@
 @include desktop-small {
 	.team {
+		.container {
+			padding-bottom: 60px;
+		}
+
 		h1 {
 			padding: 82px 0 80px;
+		}
+
+		&__items-wrapper{
+			padding-bottom: 40px;
 		}
 
 		&__img {
@@ -9,33 +17,12 @@
 			padding: 0 0 20px 0;
 		}
 
-		&__items-wrapper {
-			padding-bottom: 60px;
-			--bs-gap: 20px;
-		}
-
 		&__item {
-			padding-bottom: 40px;
-			margin-right: 20px;
-		}
-
-		&__item-last {
-			padding-bottom: 0;
+			margin: 0 20px 0 0;
 		}
 
 		&__item-position {
 			padding-bottom: 0;
 		}
-
-
-
-
-
-
-
-
-
-
-
 	}
 }

@@ -1,0 +1,49 @@
+.form {
+  width: 100%;
+  background-color: $bgroundGray;
+  padding: 20px;
+  border-radius: 12px;
+
+  h1 {
+    @include textProperties(22px, 1.18);
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  &__input::placeholder {
+    color: $gray;
+  }
+
+  &__input:invalid:not(:placeholder-shown){
+    border: 2px solid $pink;
+  }
+
+  &__input:valid:not(:placeholder-shown){
+    border: none;
+  }
+
+  &__name {
+    margin: 20px 0 20px;
+  }
+
+  &__text {
+    height: 180px;
+  }
+
+  &__question {
+    margin: 20px 0 10px;
+    letter-spacing: 1px;
+    @include textProperties(14px, 1.21);
+  }
+
+  &__email {
+    margin: 20px 0 20px;
+  }
+}

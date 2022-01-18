@@ -1,29 +1,33 @@
 .team {
-	h1 {
-		padding: 30px 0 20px;
-	}
+  .container {
+    padding-bottom: 34px;
+  }
 
-	&__img {
-		max-width: 158px;
-		padding-right: 20px;
-	}
+  h1 {
+    padding: 30px 0 20px;
+  }
 
-	&__items-wrapper{
-padding-bottom: 34px;
-	}
+  &__img {
+    max-width: 158px;
+    padding-right: 20px;
+  }
 
-	&__item {
-		padding-bottom: 20px;
-	}
+  &__item {
+    margin-bottom: 20px;
+  }
 
-	&__item-name {
-		color: #323264;
-		line-height: 1.16;
-		padding-bottom: 5px;
-	}
+  &__item-name {
+    color: #323264;
+    line-height: 1.16;
+    padding-bottom: 5px;
+  }
 
-	&__item-position {
-		@include textProperties(16px, 1.37);
-		padding-bottom: 10px;
-	}
+	&__item-name:hover {
+    color: $pink;
+  }
+
+  &__item-position {
+    @include textProperties(16px, 1.37);
+    padding-bottom: 10px;
+  }
 }

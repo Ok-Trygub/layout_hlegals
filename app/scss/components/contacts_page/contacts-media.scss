@@ -1,10 +1,13 @@
-@include desktop-small {
+@include laptop {
+  .contacts {
+    padding: 80px 20px 0;
+    max-width: 1104px;
 
-
-
-
-
-
+    &__address-wrapper {
+      max-width: 412px;
+      margin: 130px 20px 0 0;
+    }
+  }
 
   .map {
     .container-fluid {
@@ -15,9 +18,4 @@
       display: block;
     }
   }
-
-
-
-
-  
 }
