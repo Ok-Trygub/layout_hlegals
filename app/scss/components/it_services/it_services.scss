@@ -1,0 +1,56 @@
+.header-services-bground {
+	@extend %darkBground;
+	position: relative;
+}
+
+.header-services-bground::before {
+	@extend %underlineDarkBground-1;
+}
+
+.header-services-bground::after {
+	@extend %underlineDarkBground-2;
+}
+
+.services {
+	&__it-wrapper {
+		max-width: 861px;
+		padding: 30px 0 40px;
+	}
+
+	&__directions-wrapper {
+		border-top: 4px solid #ffffff;
+		padding-top: 20px;
+		max-width: 1092px;
+	}
+
+	&__icon {
+		width: 92px;
+	}
+
+	h1 {
+		padding: 20px 0 20px;
+	}
+
+	&__btn {
+		margin-top: 40px;
+	}
+
+	&__title {
+		@include textProperties(18px, 1.16);
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		padding: 0 0 0 20px;
+	}
+
+	&__list {
+		li {
+			margin-bottom: 20px;
+		}
+
+		li::marker {
+			color: $red;
+		}
+	}
+}

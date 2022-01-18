@@ -19200,9 +19200,6 @@ h2, .h2 {
 }
 
 @media (min-width: 768px) {
-  .header__logo {
-    max-width: 155px;
-  }
   .header .navbar-expand-md {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -19231,10 +19228,6 @@ h2, .h2 {
   .header .btn:last-child {
     margin-right: 20px;
   }
-  .header__address {
-    font-size: 16px;
-    line-height: 1.18;
-  }
   .header__phone, .header__phone:hover {
     color: #ffffff;
   }
@@ -19245,6 +19238,10 @@ h2, .h2 {
     color: #ffffff;
     width: 24px;
     height: 24px;
+  }
+  .header__address {
+    font-size: 14px;
+    line-height: 1.18;
   }
   .header__nav-item {
     font-size: 18px;
@@ -19263,6 +19260,9 @@ h2, .h2 {
   .header .container {
     padding-top: 56px;
   }
+  .header__logo {
+    max-width: 155px;
+  }
   .header__logo-slash {
     width: 21px;
   }
@@ -19272,6 +19272,10 @@ h2, .h2 {
   }
   .header__logo-symbol {
     width: 41px;
+  }
+  .header__address {
+    font-size: 16px;
+    line-height: 1.18;
   }
 }
 .services__pointer {

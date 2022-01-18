@@ -1,12 +1,30 @@
-.header-services-bground {
-  @extend %darkBground;
-  position: relative;
-}
+@include desktop-small {
+	.services {
+		&__it-wrapper {
+			padding: 52px 0 80px;
+		}
 
-.header-services-bground::before {
-  @extend %underlineDarkBground-1;
-}
+		&__text {
+			@include textProperties(21px, 1.42);
+		}
 
-.header-services-bground::after {
-  @extend %underlineDarkBground-2;
+		&__directions-wrapper {
+			padding: 40px 0 80px;
+		}
+
+		&__title {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		&__list {
+			max-width: 500px;
+		}
+
+		&__list {
+			li:last-child {
+				margin: 0;
+			}
+		}
+	}
 }
