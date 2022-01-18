@@ -1,0 +1,12 @@
+.header-services-bground {
+  @extend %darkBground;
+  position: relative;
+}
+
+.header-services-bground::before {
+  @extend %underlineDarkBground-1;
+}
+
+.header-services-bground::after {
+  @extend %underlineDarkBground-2;
+}
