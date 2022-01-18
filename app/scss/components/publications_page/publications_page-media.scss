@@ -1,0 +1,45 @@
+@include laptop {
+	.publications {
+		margin-top: 60px;
+		padding: 40px 0 60px;
+
+		&__wrapper {
+			display: block;
+			column-count: 2;
+			column-gap: 40px;
+			padding: 40px 0 40px;
+		}
+
+		&__item {
+			margin-bottom: 40px;
+			display: block;
+		}
+
+		&__item:nth-child(11) {
+			margin-top: 60px;
+		}
+
+		&__date {
+			padding: 10px 0 20px;
+		}
+
+		&__text {
+			display: block;
+			@include textProperties(16px, 1.28);
+			border-top: 4px solid #e6e6f0;
+			padding-top: 20px;
+		}
+	}
+}
+
+@include desktop-xxLarge {
+	.publications {
+		&__wrapper {
+			column-count: 3;
+		}
+
+		h3 {
+			@include textProperties(18px, 1.16);
+		}
+	}
+}

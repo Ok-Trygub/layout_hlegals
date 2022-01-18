@@ -19380,6 +19380,7 @@ h2, .h2 {
 }
 .publications {
   background-color: #F5F5FA;
+  border-radius: 12px 12px 0px 0px;
 }
 .publications .container {
   padding-top: 20px;

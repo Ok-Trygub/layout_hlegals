@@ -1,0 +1,32 @@
+@include desktop-small {
+	.entry {
+		padding: 60px 0 60px;
+
+		&__gdpr {
+			max-width: 909px;
+			margin: 0 0 40px 0;
+		}
+
+		&__text-top-border {
+			border-top: 4px solid #ededf7;
+			padding-top: 40px;
+			margin-top: 40px;
+		}
+
+		h1 {
+			padding: 40px 0 40px;
+		}
+
+		&__result-title {
+			font-size: 24px;
+		}
+
+		&__results-item {
+			margin-bottom: 20px;
+		}
+
+		&__img-title {
+			margin-bottom: 40px;
+		}
+	}
+}

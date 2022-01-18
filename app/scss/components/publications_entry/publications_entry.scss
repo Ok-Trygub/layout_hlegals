@@ -1,0 +1,79 @@
+.entry {
+	padding: 30px 0 40px;
+
+	&__wrapper {
+		max-width: 866px;
+	}
+
+	&__gdpr {
+		width: calc(100% + 40px);
+		margin: 0 -20px 20px -20px;
+	}
+
+	&__gdpr-title {
+		@include textProperties(22px, 1.18);
+		color: $darkBlue;
+	}
+
+	&__text-date {
+		@include textProperties(12px, 1.16);
+		letter-spacing: 1px;
+		padding-top: 10px;
+		color: $gray;
+	}
+
+	&__text-top-border {
+		border-top: 4px solid #ededf7;
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+
+	h1 {
+		padding: 20px 0 40px;
+	}
+
+	&__result-title {
+		@include textProperties(18px, 1.16);
+		color: $darkBlue;
+		margin-bottom: 20px;
+	}
+
+	&__results-item {
+		margin-bottom: 20px;
+	}
+
+	&__results-item::marker {
+		color: $pink;
+		font-weight: 700;
+	}
+
+	&__advertising {
+		width: calc(100% + 40px);
+		margin: 20px -20px 10px -20px;
+	}
+
+	&__img-title {
+		@include textProperties(16px, 1.37);
+		color: $gray;
+		margin-bottom: 20px;
+	}
+
+	&__text-title {
+		@include textProperties(18px, 1.16);
+		color: $darkBlue;
+		margin: 40px 0 20px;
+	}
+
+	&__text-bottom-border {
+		border-bottom: 4px solid #e6e6f0;
+		padding-bottom: 40px;
+		margin-bottom: 20px;
+	}
+
+	&__social-link {
+		padding: 10px;
+		background: #f5f5fa;
+		border-radius: 12px;
+		margin-right: 10px;
+	}
+}
