@@ -10,14 +10,33 @@
 	-webkit-text-fill-color: transparent;
 }
 
+%darkBground{
+	background: linear-gradient(47.99deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
+	background-repeat: no-repeat;
+	border-radius: 0px 0px 12px 12px;
+}
+
 %underlineDarkBground-1 {
 	background-color: #cacadb;
 	border-radius: 0px 0px 12px 12px;
+	content: "";
+	width: calc(100% - 40px);
+	height: 10px;
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+	right: 20px;
 }
 
 %underlineDarkBground-2 {
 	background-color: #e7e7f2;
 	border-radius: 0px 0px 12px 12px;
+	content: "";
+	width: calc(100% - 80px);
+	height: 10px;
+	position: absolute;
+	bottom: -20px;
+	left: 40px;
 }
 
 %carouselIndicator {

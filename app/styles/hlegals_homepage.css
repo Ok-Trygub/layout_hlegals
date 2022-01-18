@@ -18985,14 +18985,34 @@ textarea.form-control-lg {
   -webkit-text-fill-color: transparent;
 }
 
+.header-services-bground {
+  background: -o-linear-gradient(42.01deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
+  background: linear-gradient(47.99deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 12px 12px;
+}
+
 .header-services-bground::before {
   background-color: #cacadb;
   border-radius: 0px 0px 12px 12px;
+  content: "";
+  width: calc(100% - 40px);
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  right: 20px;
 }
 
 .header-services-bground::after {
   background-color: #e7e7f2;
   border-radius: 0px 0px 12px 12px;
+  content: "";
+  width: calc(100% - 80px);
+  height: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
 }
 
 .team .carousel-indicators [data-bs-target], .rules .carousel-indicators [data-bs-target] {
@@ -19118,6 +19138,17 @@ h2, .h2 {
 }
 .header .container {
   padding-top: 20px;
+}
+.header__logo-slash {
+  width: 11px;
+}
+.header__logo-text {
+  font-size: 19px;
+  line-height: 1.16;
+  color: #ffffff;
+}
+.header__logo-symbol {
+  width: 21px;
 }
 .header button[aria-expanded=true] .navbar-toggler-icon {
   width: 18px;
@@ -19247,32 +19278,19 @@ h2, .h2 {
   .header .container {
     padding-top: 56px;
   }
+  .header__logo-slash {
+    width: 21px;
+  }
+  .header__logo-text {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+  .header__logo-symbol {
+    width: 41px;
+  }
 }
 .header-services-bground {
-  background: -o-linear-gradient(42.01deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
-  background: linear-gradient(47.99deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
-  background-repeat: no-repeat;
-  border-radius: 0px 0px 12px 12px;
   position: relative;
-}
-
-.header-services-bground::before {
-  content: "";
-  width: calc(100% - 40px);
-  height: 10px;
-  position: absolute;
-  bottom: -10px;
-  left: 20px;
-  right: 20px;
-}
-
-.header-services-bground::after {
-  content: "";
-  width: calc(100% - 80px);
-  height: 10px;
-  position: absolute;
-  bottom: -20px;
-  left: 40px;
 }
 
 .logo .container-fluid, .logo .container-sm, .logo .container-md, .logo .container-lg, .logo .container-xl, .logo .container-xxl {
@@ -19520,7 +19538,7 @@ h2, .h2 {
 
 @media (min-width: 992px) {
   .team .container {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .team__items-wrapper {
     padding: 0;

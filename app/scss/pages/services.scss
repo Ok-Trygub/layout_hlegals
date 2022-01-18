@@ -1,0 +1,42 @@
+@import "./../index";
+
+@import "./../components/header_darkBground";
+@import "./../components/services";
+@import "./../components/successful_cases";
+@import "./../components/partners";
+@import "./../components/footer";
+
+.header-services-bground {
+  @extend %darkBground;
+  position: relative;
+}
+
+.header-services-bground::before {
+  @extend %underlineDarkBground-1;
+}
+
+.header-services-bground::after {
+  @extend %underlineDarkBground-2;
+}
+
+.services {
+  h1 {
+    margin: 30px 0 20px;
+  }
+}
+
+.cases {
+  margin-top: 40px;
+}
+
+@include desktop-small {
+  .services {
+    h1 {
+      margin: 75px 0 68px;
+    }
+  }
+
+  .cases {
+    margin-top: 60px;
+  }
+}

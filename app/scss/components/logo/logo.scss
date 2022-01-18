@@ -1,30 +1,16 @@
 .header-services-bground {
-	background: linear-gradient(47.99deg, #7a425e 0, #323264 26.33%, #323264 88.39%, #7a425e 97.53%);
-	background-repeat: no-repeat;
-	border-radius: 0px 0px 12px 12px;
+	@extend %darkBground;
 	position: relative;
 }
 
 .header-services-bground::before {
-	content: "";
 	@extend %underlineDarkBground-1;
-	width: calc(100% - 40px);
-	height: 10px;
-	position: absolute;
-	bottom: -10px;
-	left: 20px;
-	right: 20px;
 }
 
 .header-services-bground::after {
-	content: "";
 	@extend %underlineDarkBground-2;
-	width: calc(100% - 80px);
-	height: 10px;
-	position: absolute;
-	bottom: -20px;
-	left: 40px;
 }
+
 
 .logo {
 	.container-fluid {
